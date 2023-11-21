@@ -47,10 +47,3 @@ python main.py --model CCM|CCM-OT --data AFHQ --task Im2Im
 ```test
 python main.py --model DCM|DCM-MS|CCM|CCM-OT|PCM --data Cifar10 --train False 
 ```
-
-
-3) To test the model(s) and calculate the metrics in the paper, run this command:
-
-```test
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
-```
