@@ -2,6 +2,8 @@
 
 This repository is the official implementation of *A Unified Framework for Consistency Generative Modeling.*
 
+
+
 ## Requirements
 
 ```setup
@@ -21,22 +23,30 @@ pip install -r requirements.txt
 #### CIFAR-10 
 
 ```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python main.py --model DCM|DCM-MS|CCM|CCM-OT|PCM --data Cifar10
 ```
 
 #### CelebA
 
 ```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python main.py --model DCM|DCM-MS|CCM|CCM-OT|PCM --data Celeba
 ```
 
 #### AFHQ for Im2Im
 
 ```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
+python main.py --model CCM|CCM-OT --data AFHQ --task Im2Im
 ```
 
 ## Testing
+
+1) Place reference samples in ./assets
+ 
+2) To test the model(s) and calculate the metrics in the paper, run this command:
+
+```test
+python main.py --model DCM|DCM-MS|CCM|CCM-OT|PCM --data Cifar10 --train False 
+```
 
 
 3) To test the model(s) and calculate the metrics in the paper, run this command:
