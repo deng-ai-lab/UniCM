@@ -2,6 +2,11 @@
 
 This repository is the official implementation of *A Unified Framework for Consistency Generative Modeling.*
 
+
+<div align="center">
+    <img src="assets/method2_00.png" height="260"><img src="assets/inpaint.gif" height="210"><img src="assets/jpeg5.gif" height="210">
+</div>
+
 ## Requirements
 
 ```setup
