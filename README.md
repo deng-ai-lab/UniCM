@@ -1,6 +1,6 @@
 # A Unified Framework for Consistency Generative Modeling
 
-This repository is the official implementation of *A Unified Framework for Consistency Generative Modeling.*
+This repository is the official implementation of *Towards a Unified Framework for Consistency Generative Modeling.*
 
 
 <div align="center">
