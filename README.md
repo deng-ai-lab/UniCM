@@ -4,8 +4,14 @@ This repository is the official implementation of *A Unified Framework for Consi
 
 
 <div align="center">
-    <img src="assets/method2_00.png" height="260"><img src="assets/inpaint.gif" height="210"><img src="assets/jpeg5.gif" height="210">
+    <img src="assets/method2_00.png" height="460">
 </div>
+
+
+Consistency generative modeling relies on a *probability density path* ${\lbrace p\_t \rbrace}_{t=0}^T$ bridging the prior and data distribution. By collecting two points (e.g.,
+$\mathbf{x}\_t$ and $\mathbf{x}\_{t+\Delta t}\approx \mathbf{x}_t+\boldsymbol{v}_t(\mathbf{x}_t)\cdot\Delta t$) located on the same trajectory within this path, the network is trained to map them to the initial point (e.g., $\mathbf{x}_0$) for ensuring *self-consistency*.
+
+
 
 ## Requirements
 
